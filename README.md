@@ -22,7 +22,7 @@ En caso de utilizar el deploy, espera unos minutos a que se levante el servidor 
 
    ```bash
    git clone https://github.com/santipaz19/Back-End-PokemonBattle.git
-   cd pokemon-battle-backend
+
 2. **Instalar dependencias: Usando npm:**
 
    npm install
