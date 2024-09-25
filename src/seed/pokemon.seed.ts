@@ -1,4 +1,3 @@
-
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -13,13 +12,10 @@ export class PokemonSeeder {
     ) { }
 
     async seed() {
-        // borrar los Pokemon existentes
+        // Borrar los Pokémon existentes
         await this.pokemonRepository.clear();
 
-        // Guardar los nuevos Pokémon en la base de datos
-        for (const pokemon of pokemonData) {
-            await this.pokemonRepository.save(pokemon);
-        }
+        await this.pokemonRepository.save(pokemonData);
 
         console.log('Pokémon seed completada');
     }
